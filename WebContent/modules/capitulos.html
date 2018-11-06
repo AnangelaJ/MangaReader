@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Capitulos</title>
+		<link rel="shortcut icon" href="../images/icon.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assetscap/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+	</head>
+	<body>
+
+		<!-- Content -->
+			<div id="content">
+				<div class="inner">
+
+					<!-- Post -->
+						<article class="box post post-excerpt">
+							<header>
+								<!--
+									Note: Titles and subtitles will wrap automatically when necessary, so don't worry
+									if they get too long. You can also remove the <p> entirely if you don't
+									need a subtitle.
+								-->
+								<h2><a href="shonen.html"><p id="genero"></p></a></h2>
+								<p id="manga">
+									<p id="capitulo"></p>
+								</p>
+							</header>
+							<div id="imaManga" class="dima">
+									<span class="image"><img id="imagen" /></span>
+									<style>
+										.dima image{
+											width: 100%;
+										}
+									</style>
+							</div>	
+
+					<!-- Pagination -->
+						<div class="pagination">
+							<!--<a href="#" class="button previous">Previous Page</a>-->
+						<!--  	<div class="pages" id="numeracion">
+								<a href="#" class="active">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+								<span>&hellip;</span>
+								<a href="#">20</a>
+							</div>-->
+							<div id="likes"></div>
+							<div id="buttons" style= "display: table-cell; vertical-align: middle">
+								<a onclick= "verificar()" class="button next" id="next">Siguiente</a> <br><br>
+								<a onclick= "descargar()" class="button next" id="descargar">Descargar</a> <br>
+							</div>
+						</div>
+					<!-- Likes & Comments -->
+						<div class="likes" id ="bloque">
+								
+								<br><a onclick="like()" class="button next" id="like">Me Gusta</a> <br>
+									<a onclick="comentar()" class="button next" id="comment">Comentar</a> <br>
+									<a onclick="eliminar()" class="button next" id="delete">Eliminar</a> <br>
+									<div id="comenta" class="comenta">
+										<textarea placeholder="Deja tu comentario" id="comentar"></textarea>
+										<style>
+											.comenta textarea{
+												width: 250px;
+												height: 50px;
+												background: rgb(202, 200, 200);
+												border: 1px solid rgba(39, 169, 255, 0.6);
+												border-radius: 2px;
+												color: rgb(0, 0, 0);
+												font-family: 'Exo', sans-serif;
+												font-size: 16px;
+												font-weight: 400;
+												align-content: center;
+												padding: 4px;
+												margin-top: 10px;
+												display: none;
+											}
+										</style>
+									</div>
+						</div>
+						<div id = "comentarios">
+							
+						</div>
+
+				</div>
+			</div>
+
+		<!-- Sidebar -->
+			<div id="sidebar">
+
+				<!-- Logo -->
+					<h1 id="logo"><a href="../index.html">Inicio</a></h1>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul id= "opcionesCap">
+						<li><a onclick="capSiguiente()" class="button next" id="CapSigui">Siguiente Capitulo</a> </li><br>
+						<li><a onclick="capAnterior()" class="button next" id="CapAnte">Capitulo Anterior</a> </li><br>
+						<!-- <li class="current"><a href="#">Capitulo Anterior</a></li>
+							<li><a href="#">Capitulo 1</a></li>
+							<li><a href="#">Capitulo 2</a></li>
+							<li><a href="#">Capitulo 3</a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Text -->
+					<section class="box text-style1">
+						<div class="inner">
+							<p id="sinopsis" ALIGN=center>
+								<strong>Sinopsis:</strong><br>
+								<p id="texto"></p>  
+							</p>
+						</div><br><br>
+						<a onclick="eliminar()" class="button next" id="deleteManga">Eliminar Manga</a> <br>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assetscap/js/jquery.min.js"></script>
+			<script src="../assetscap/js/skel.min.js"></script>
+			<script src="../assetscap/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assetscap/js/main.js"></script>
+			<script src="../js/wrapperXml.js"></script>
+			<script src = "../js/capitulos.js"></script>
+	</body>
+</html>
